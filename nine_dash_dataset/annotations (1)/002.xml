@@ -1,0 +1,1 @@
+<annotation><folder>VOC2014</folder><filename>002.jpg</filename><source><database>Unknown</database></source><size><width>473</width><height>622</height><depth>3</depth></size><segmented>0</segmented><object><name>NineDash</name><bndbox><xmin>245</xmin><ymin>85</ymin><xmax>522</xmax><ymax>426</ymax></bndbox></object></annotation>

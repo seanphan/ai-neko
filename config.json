@@ -1,0 +1,41 @@
+{
+    "model" : {
+        "min_input_size":       288,
+        "max_input_size":       480,
+        "anchors":              [55,69, 75,234, 133,240, 136,129, 142,363, 203,290, 228,184, 285,359, 341,260],
+        "labels":               ["NineDash"]
+    },
+
+    "train": {
+        "train_image_folder":   "/content/drive/My Drive/ai-neko3/keras-yolo3/nine_dash_dataset/images/",
+        "train_annot_folder":   "/content/drive/My Drive/ai-neko3/keras-yolo3/nine_dash_dataset/annotations/",
+        "cache_name":           "new_nine_dash_train.pkl",
+
+        "train_times":          5,
+        "batch_size":           12,
+        "learning_rate":        1e-3,
+        "nb_epochs":            10,
+        "warmup_epochs":        3,
+        "ignore_thresh":        0.5,
+        "gpus":                 "0,1",
+
+        "grid_scales":          [1,1,1],
+        "obj_scale":            5,
+        "noobj_scale":          1,
+        "xywh_scale":           1,
+        "class_scale":          1,
+
+        "tensorboard_dir":      "logs",
+        "saved_weights_name":   "new_nine_dash",
+        "test_saved_weights_name": "new_nine_dash_13.h5",
+        "debug":                false
+    },
+
+    "valid": {
+        "valid_image_folder":   "/content/drive/My Drive/ai-neko3/keras-yolo3/nine_dash_dataset/val_images/",
+        "valid_annot_folder":   "/content/drive/My Drive/ai-neko3/keras-yolo3/nine_dash_dataset/val_annotations/",
+        "cache_name":           "",
+
+        "valid_times":          1
+    }
+}
